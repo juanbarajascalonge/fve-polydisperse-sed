@@ -30,7 +30,7 @@ This FVE scheme is second-order accurate in both space and time and produce nume
   values in $`\mathcal{D}`$ for all times. It combines a variety of ingredients:
 
 - Nonconforming Crouzeix–Raviart/P0 approximations for the Stokes problem in a primal triangular mesh.
-- Finite volume schemen on the dual diamond mesh for the $`N`$ concentration equations with a Local Lax-Friedrichs (LLF) numerical flux. 
+- Finite volume scheme on the dual diamond mesh for the $`N`$ concentration equations with a Local Lax-Friedrichs (LLF) numerical flux. 
 - Second-order polynomial reconstructions: Monotonic Upstream-centered Scheme for Conservation Laws (MUSCL) method.
 - Maximum-principle limiters: Zhang & Shu maximum principle and positivity preserving limiters.
 - Second-order time approximations: strong stability preserving Runge-Kutta method of second order (SSPRK2).
