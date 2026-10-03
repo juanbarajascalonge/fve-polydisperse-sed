@@ -10,7 +10,7 @@ $$
 		\quad \boldsymbol{\varepsilon} ( \boldsymbol{u} ) \coloneqq \frac12 ( \nabla \boldsymbol{u} 
 		+ (\nabla \boldsymbol{u})^{\mathrm{T}}); 
 		\\
-		\label{eq1.1c} 	 \quad \nabla \cdot \boldsymbol{u} &= 0, 
+			 \quad \nabla \cdot \boldsymbol{u} &= 0, 
 	\end{aligned}
  $$ 
 
