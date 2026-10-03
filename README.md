@@ -23,15 +23,20 @@ $$	D := \{  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \,
 
 where $\phi_{\max}$ denotes a given maximum total particle volume fraction. 
 
-> J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
-> *An invariant-region-preserving finite-volume-element scheme for a
-> polydisperse model of flow and segregation in general domains* (2026).
-
 The Stokes problem is discretised with nonconforming Crouzeix–Raviart/P0
 elements on a triangulation, and the $`N`$
 concentration equations with a finite volume scheme on the dual diamond
 mesh: LLF flux, MUSCL reconstruction with scaling limiters, and SSPRK2 time
 stepping (Algorithm 3.1).
+
+We kindly ask you to to acknowledge the use of this software by citing the (current) paper:
+
+> J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
+> *An invariant-region-preserving finite-volume-element scheme for a
+> polydisperse model of flow and segregation in general domains* (2026).
+
+Related papers, with first-order accurate numerical scheme:
+
 
 ## Contents
 
