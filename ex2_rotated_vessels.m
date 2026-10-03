@@ -18,7 +18,7 @@ for th = angles
         mesh = load_mesh(sprintf('Meshes/inclined_%d_%d.mat', th, k));
         for s = 1:2
             tf = 1.5;
-            opt = struct('tf', tf, 'save_times', [0.5 1.5 3], 'irp', s == 2, ...
+            opt = struct('tf', tf, 'save_times', [0.5 1.5], 'irp', s == 2, ...
                          'name', sprintf('Results/ex2_th%d_k%d_%s', th, k, scheme{s}));
             solve_fve(repmat(Phi0, numel(mesh.g.A), 1), mesh, model, opt);
         end
