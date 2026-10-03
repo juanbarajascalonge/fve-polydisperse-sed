@@ -1,13 +1,13 @@
 # IRP finite-volume-element scheme for polydisperse flow and segregation
 
-MATLAB/Octave code for the numerical examples of
+MATLAB code for the numerical examples of
 
 > J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
 > *An invariant-region-preserving finite-volume-element scheme for a
 > polydisperse model of flow and segregation in general domains* (2026).
 
 The Stokes problem is discretised with nonconforming Crouzeix–Raviart/P0
-elements (with jump stabilisation) on a triangulation, and the N
+elements on a triangulation, and the $`N`$
 concentration equations with a finite volume scheme on the dual diamond
 mesh: LLF flux, MUSCL reconstruction with scaling limiters, and SSPRK2 time
 stepping (Algorithm 3.1).
