@@ -67,9 +67,9 @@ Results/                 snapshots written by the examples (.mat)
 |---|---|
 | `default_model.m` | model parameters of Section 4 (MLB model, viscosity, buoyancy) |
 | `build_mesh.m`, `load_mesh.m` | primal triangulation → dual mesh; reading the mesh files |
-| `stokes_setup.m`, `stokes_solve.m` | CR/P0 Stokes solver, problem (2.2) |
+| `stokes_setup.m`, `stokes_solve.m` | CR/P0 Stokes solver |
 | `fv_setup.m`, `fv_residual.m` | dual-mesh FV scheme: MUSCL gradient, slope and scaling limiters, LLF flux |
-| `solve_fve.m` | coupled time loop (Algorithm 3.1), CFL condition (3.12), snapshots |
+| `solve_fve.m` | coupled time loop (Algorithm 3.1), snapshots |
 | `cell_average.m` | cell averages of initial data |
 | `manufactured_ex1.m` | exact solution and forcing terms of Example 1 |
 | `inflow_outflow_bc.m` | boundary data of Example 5 |
