@@ -6,7 +6,7 @@
 clear; close all; clc
 addpath('src');
 angles = [0 30 45 60];
-levels = 0:4;
+levels = 1:4;
 scheme = {'fve', 'irp'};                       % without / with scaling limiters
 
 model = default_model('d', [2.9 2.0]*1e-3, 'nrz', 4.6, 'phimax', 0.6, ...
