@@ -21,8 +21,8 @@ $$
 	& \Phi ( \boldsymbol{x}, 0 ) = \Phi_0 (\boldsymbol{x}) \quad \text{for all $\boldsymbol{x} \in \Omega$, 
 		where $\Phi_0 \coloneqq ( \phi_{1,0}, \dots, \phi_{N,0})^{\mathrm{T}}$},  \\
 	& \boldsymbol{u} = \boldsymbol{0} \quad \text{and} \quad   (f_{ l}(\Phi)\boldsymbol{k}) \cdot \boldsymbol{n} = 0,\quad  l=1,\dots,N, 
-	\quad\text{on  $\partial \Omega$,}   \label{boundconds} \\
-	& \int_{\Omega} p(\boldsymbol{x},t)\,\mathrm{d} \boldsymbol{x} = 0  \quad  \text{for all $t\geq 0$.}  \label{pcond}
+	\quad\text{on  $\partial \Omega$,}   \\
+	& \int_{\Omega} p(\boldsymbol{x},t)\,\mathrm{d} \boldsymbol{x} = 0  \quad  \text{for all $t\geq 0$.}  
 \end{aligned} 
 $$
 
