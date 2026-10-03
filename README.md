@@ -48,8 +48,7 @@ Run the example scripts from the repository root, e.g.
 ```
 
 The scripts only compute; tables and figures are obtained from the stored
-snapshots. Snapshots are named `Results/<example>_..._t<time>.mat` (a dot in
-the time is written as `p`, e.g. `ex5_t4p25.mat`) and contain
+snapshots. Snapshots are named `Results/<example>_..._t<time>.mat` and contain
 
 | variable | content |
 |---|---|
