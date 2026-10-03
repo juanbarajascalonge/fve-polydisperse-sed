@@ -113,8 +113,3 @@ Mesh files: `square<n>.mat` (Example 1, n = 4, ..., 128),
 `refluxclas_<k>.mat` (Example 4) and `tank_160x30.mat` (Example 5). A mesh file needs at least the triangulation
 `Vtri` (2 x nv) and `Ttri` (3 x nt); see `load_mesh.m`.
 
-## Requirements
-
-MATLAB R2016b or later (implicit expansion), or GNU Octave. `plot_result`
-uses `exportgraphics` (MATLAB R2020a) when available.
-
