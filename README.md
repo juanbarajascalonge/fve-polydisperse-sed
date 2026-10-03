@@ -1,6 +1,6 @@
 # IRP finite-volume-element scheme for polydisperse flow and segregation
 
-This Github repository contains the source files of a finite volume element solver written in MATLAB designed to approximate the coupled  transport-flow models for polydisperse flow and segregation given by
+This Github repository contains the source files of a finite volume element solver written in MATLAB designed to approximate the coupled  transport-flow problem:
 
 $$
 	\begin{aligned}
@@ -14,17 +14,16 @@ $$
 	\end{aligned}
  $$ 
 
-where  $\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}$, $\phi \coloneqq \phi_1 + \cdots + \phi_N$,  and is posed on a bounded domain $\Omega \subset \mathbb{R}^2$ for $t >0$, 
-along with the initial and boundary conditions 
+where  $`\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}`$, $`\phi \coloneqq \phi_1 + \cdots + \phi_N`$,  and is posed on a bounded domain $`\Omega \subset \mathbb{R}^2`$ for $`t >0`$. The system can be  understood as a transport-flow model for a  two-phase mixture consisting of a disperse phase with $`N`$ species of particles or droplets moving  in a viscous continuous phase. In particular it models  a polydisperse suspension    of solid particles of $`N`$ species with diameters $`d_1 \geq \dots \geq d_N`$ and densities $`\rho_1, \dots, \rho_N`$  dispersed   in a viscous fluid. The  unknowns are the volume fractions $`\phi_l=\phi_l (\boldsymbol{x}, t)`$ of each particle species $`l`$ (having diameter $`d_l`$ and density $`\rho_l`$), which depend on  spatial position $`\boldsymbol{x}`$ and time $`t`$, the volume-averaged mixture velocity $`\boldsymbol{u}=\boldsymbol{u}(\boldsymbol{x},t)`$,  and the pressure $`p=p(\boldsymbol{x},t)`$. Here  $`\boldsymbol{k}`$ denotes the downward-pointing unit vector   while $v_1(\Phi), \dots, v_N(\Phi)$ are  prescribed velocity functions 
+ that  describe the relative motion of each particle species with respect to the   mixture. The physically relevant set of states $`\Phi`$ is  
 $$
-\begin{aligned}  
-	& \Phi ( \boldsymbol{x}, 0 ) = \Phi_0 (\boldsymbol{x}) \quad \text{for all $\boldsymbol{x} \in \Omega$, 
-		where $\Phi_0 \coloneqq ( \phi_{1,0}, \dots, \phi_{N,0})^{\mathrm{T}}$},  \\
-	& \boldsymbol{u} = \boldsymbol{0} \quad \text{and} \quad   (f_{ l}(\Phi)\boldsymbol{k}) \cdot \boldsymbol{n} = 0,\quad  l=1,\dots,N, 
-	\quad\text{on  $\partial \Omega$,}   \\
-	& \int_{\Omega} p(\boldsymbol{x},t)\,\mathrm{d} \boldsymbol{x} = 0  \quad  \text{for all $t\geq 0$.}  
-\end{aligned} 
+\begin{align*} 
+	\mathcal{D} \coloneqq 
+	\bigl\{ &  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \, 
+	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi \coloneqq \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \bigr\},      
+\end{align*}
 $$
+where $\phi_{\max}$ denotes a given maximum total particle volume fraction. 
 
 > J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
 > *An invariant-region-preserving finite-volume-element scheme for a
