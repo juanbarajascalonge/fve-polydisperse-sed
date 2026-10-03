@@ -21,7 +21,7 @@ $$
 \begin{aligned} 
 	\mathcal{D} := 
 	\{ &  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \, 
-	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi \coloneqq \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \},      
+	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \},      
 \end{aligned}
 $$
 
