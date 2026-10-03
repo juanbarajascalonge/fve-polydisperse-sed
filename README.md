@@ -18,8 +18,8 @@ where  $`\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}`$, $`\phi \coloneq
  that  describe the relative motion of each particle species with respect to the   mixture. The physically relevant set of states $`\Phi`$ is 
  
 $$	D := 
-	\{   (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \, 
-	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \},      
+	 \big\{  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \, 
+	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \big\},      
 	$$
 
 where $\phi_{\max}$ denotes a given maximum total particle volume fraction. 
