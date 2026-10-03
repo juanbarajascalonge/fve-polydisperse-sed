@@ -17,8 +17,8 @@ $$
 where  $`\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}`$, $`\phi \coloneqq \phi_1 + \cdots + \phi_N`$,  and is posed on a bounded domain $`\Omega \subset \mathbb{R}^2`$ for $`t >0`$. The system can be  understood as a transport-flow model for a  two-phase mixture consisting of a disperse phase with $`N`$ species of particles or droplets moving  in a viscous continuous phase. In particular it models  a polydisperse suspension    of solid particles of $`N`$ species with diameters $`d_1 \geq \dots \geq d_N`$ and densities $`\rho_1, \dots, \rho_N`$  dispersed   in a viscous fluid. The  unknowns are the volume fractions $`\phi_l=\phi_l (\boldsymbol{x}, t)`$ of each particle species $`l`$ (having diameter $`d_l`$ and density $`\rho_l`$), which depend on  spatial position $`\boldsymbol{x}`$ and time $`t`$, the volume-averaged mixture velocity $`\boldsymbol{u}=\boldsymbol{u}(\boldsymbol{x},t)`$,  and the pressure $`p=p(\boldsymbol{x},t)`$. Here  $`\boldsymbol{k}`$ denotes the downward-pointing unit vector   while $v_1(\Phi), \dots, v_N(\Phi)$ are  prescribed velocity functions 
  that  describe the relative motion of each particle species with respect to the   mixture. The physically relevant set of states $`\Phi`$ is 
  
-$$	D := \text{{}  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \, 
-	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \text{}},      
+$$	D := \{  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N \, :  \, 
+	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \},      
 	$$
 
 where $\phi_{\max}$ denotes a given maximum total particle volume fraction. 
