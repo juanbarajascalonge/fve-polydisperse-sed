@@ -26,7 +26,8 @@ D := \{  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N  :
 
 where $\phi_{\max}$ denotes a given maximum total particle volume fraction. 
 
-The Stokes problem is discretised with nonconforming Crouzeix–Raviart/P0
+This FVE  scheme is second-order accurate in both space and time and produce numerical solutions satisfying the invariant region preservation (IRP) property, that is, if $`\Phi_0 (\boldsymbol{x}) \in \mathcal{D}`$ for all $`\boldsymbol{x} \in \Omega`$, then the numerical solution assumes 
+  values in $`\mathcal{D}`$ for all times. The Stokes problem is discretised with nonconforming Crouzeix–Raviart/P0
 elements on a triangulation, and the $`N`$
 concentration equations with a finite volume scheme on the dual diamond
 mesh: LLF flux, MUSCL reconstruction with scaling limiters, and SSPRK2 time
