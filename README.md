@@ -15,11 +15,11 @@ stepping (Algorithm 3.1).
 ## Contents
 
 ```
-ex1_accuracy.m           Example 1  manufactured solution (Table 1, Fig. 3)
-ex2_rotated_vessels.m    Example 2  FVE vs IRP-FVE in rotated vessels (Tables 2-3, Fig. 4)
-ex3_roof.m               Example 3  roof-shaped vessel (Table 4, Fig. 6)
-ex4_reflux_classifier.m  Example 4  reflux classifier (Fig. 7)
-ex5_inflow_outflow.m     Example 5  tank with inflow and outflow (Fig. 8)
+ex1_accuracy.m           Example 1  manufactured solution 
+ex2_rotated_vessels.m    Example 2  FVE vs IRP-FVE in rotated vessels 
+ex3_roof.m               Example 3  roof-shaped vessel 
+ex4_reflux_classifier.m  Example 4  reflux classifier
+ex5_inflow_outflow.m     Example 5  tank with inflow and outflow 
 plot_result.m            generic plot of a stored snapshot
 src/                     solver
 Meshes/                  meshes (.mat)
