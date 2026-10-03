@@ -19,8 +19,8 @@ where  $`\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}`$, $`\phi \coloneq
  
 $$
 \begin{aligned}
-\mathcal{D} := \{  (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N  :  
-	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max}  \},
+\mathcal{D} := \lbrace   (  \phi_1, \dots, \phi_N)^{\mathrm{T}} \in \mathbb{R}^N  :  
+	\phi_1 \geq 0, \dots,\phi_N \geq 0,  \phi := \phi_1 + \cdots + \phi_N \leq \phi_{\max} \rbrace,
 	\end{aligned}
 	$$
 
