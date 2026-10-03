@@ -37,9 +37,8 @@ This FVE scheme is second-order accurate in both space and time and produce nume
 
 We kindly ask you to to acknowledge the use of this software by citing the (current) paper:
 
-> J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
-> *An invariant-region-preserving finite-volume-element scheme for a
-> polydisperse model of flow and segregation in general domains* (2026).
+$\color{blue}\texttt{(Current version)}$
+J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada. **An invariant-region-preserving finite-volume-element scheme for a polydisperse model of flow and segregation in general domains**, 2026.
 
 Related papers presenting high-order IRP schemes for the one-dimensional version of the model and its two-dimensional version on Cartesian grids:
 
