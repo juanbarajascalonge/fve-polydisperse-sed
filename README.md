@@ -27,14 +27,13 @@ $$
 where $\phi_{\max}$ denotes a given maximum total particle volume fraction. 
 
 This FVE scheme is second-order accurate in both space and time and produce numerical solutions satisfying the invariant region preservation (IRP) property, that is, if $`\Phi_0 (\boldsymbol{x}) \in \mathcal{D}`$ for all $`\boldsymbol{x} \in \Omega`$, then the numerical solution assumes 
-  values in $`\mathcal{D}`$ for all times. The Stokes problem is discretised with nonconforming Crouzeix–Raviart/P0
-elements on a triangulation, and the $`N`$
-concentration equations with a finite volume scheme on the dual diamond
-mesh. It combines a variety of ingredients:
+  values in $`\mathcal{D}`$ for all times. It combines a variety of ingredients:
 
-- Second-order time approximations: strong stability preserving Runge-Kutta method of second order (SSPRK2).
+- Nonconforming Crouzeix–Raviart/P0 approximations for the Stokes problem in a primal triangular mesh.
+- Finite volume schemen on the dual diamond mesh for the $`N`$ concentration equations with a Local Lax-Friedrichs (LLF) numerical flux. 
 - Second-order polynomial reconstructions: Monotonic Upstream-centered Scheme for Conservation Laws (MUSCL) method.
 - Maximum-principle limiters: Zhang & Shu maximum principle and positivity preserving limiters.
+- Second-order time approximations: strong stability preserving Runge-Kutta method of second order (SSPRK2).
 
 We kindly ask you to to acknowledge the use of this software by citing the (current) paper:
 
