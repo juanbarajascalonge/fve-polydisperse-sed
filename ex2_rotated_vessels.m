@@ -5,9 +5,8 @@
 
 clear; close all; clc
 addpath('src');
-angles = 30;
-%angles = [0 30 45 60];
-levels = 3:3;
+angles = [0 30 45 60];
+levels = 0:4;
 scheme = {'fve', 'irp'};                       % without / with scaling limiters
 
 model = default_model('d', [2.9 2.0]*1e-3, 'nrz', 4.6, 'phimax', 0.6, ...
@@ -18,8 +17,7 @@ for th = angles
     for k = levels
         mesh = load_mesh(sprintf('Meshes/inclined_%d_%d.mat', th, k));
         for s = 1:2
-            tf = 0.5;
-            %if s == 2 && k == levels(end), tf = 3; end
+            tf = 1.5;
             opt = struct('tf', tf, 'save_times', [0.5 1.5 3], 'irp', s == 2, ...
                          'name', sprintf('Results/ex2_th%d_k%d_%s', th, k, scheme{s}));
             solve_fve(repmat(Phi0, numel(mesh.g.A), 1), mesh, model, opt);
