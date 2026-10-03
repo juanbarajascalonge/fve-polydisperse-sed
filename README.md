@@ -35,7 +35,12 @@ We kindly ask you to to acknowledge the use of this software by citing the (curr
 > *An invariant-region-preserving finite-volume-element scheme for a
 > polydisperse model of flow and segregation in general domains* (2026).
 
-Related papers, with first-order accurate numerical scheme:
+Related papers presenting high-order IRP schemes for the one-dimensional version of the model and its two-dimensional version on Cartesian grids:
+
+- J. Barajas-Calonge, R. Bürger, P. Mulet and L.M. Villada. **Invariant-region-preserving WENO schemes for one-dimensional multispecies kinematic flow models**, 
+*J. Comput. Phys.* 537 (2025), article 114081. [**link**](https://www.sciencedirect.com/science/article/abs/pii/S002199912500364X)
+- J. Barajas-Calonge, R. Bürger, P. Mulet and L.M. Villada. **A second-order invariant-region-preserving scheme for a transport-flow model of polydisperse sedimentation**,
+*J. Sci. Comput.* 108 (2026), article 29, [**link**](https://link.springer.com/article/10.1007/s10915-026-03356-y)
 
 
 ## Contents
