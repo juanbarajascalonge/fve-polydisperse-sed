@@ -4,9 +4,9 @@ This Github repository contains the source files of a finite volume element solv
 
 $$
 	\begin{aligned}
-		\label{eq1.1a} 	\partial_t  \phi_{ l} +\nabla \cdot \big(\phi_{ l} \boldsymbol{u}+  f_{ l}(\Phi)\boldsymbol{k}\big)&=0,\quad  
+			\partial_t  \phi_{ l} +\nabla \cdot \big(\phi_{ l} \boldsymbol{u}+  f_{ l}(\Phi)\boldsymbol{k}\big)&=0,\quad  
 		f_l ( \Phi) = \phi_l v_l ( \Phi), \quad l=1,\dots,N; \\
-		\label{eq1.1b} 	   -\nabla \cdot \bigl(\mu(\phi)\boldsymbol{\varepsilon}(\boldsymbol{u}) \bigr)+ \nabla p &= \boldsymbol{g}(\phi),
+			   -\nabla \cdot \bigl(\mu(\phi)\boldsymbol{\varepsilon}(\boldsymbol{u}) \bigr)+ \nabla p &= \boldsymbol{g}(\phi),
 		\quad \boldsymbol{\varepsilon} ( \boldsymbol{u} ) \coloneqq \frac12 ( \nabla \boldsymbol{u} 
 		+ (\nabla \boldsymbol{u})^{\mathrm{T}}); 
 		\\
@@ -14,10 +14,10 @@ $$
 	\end{aligned}
  $$ 
 
-where  $\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}$, $\phi \coloneqq \phi_1 + \cdots + \phi_N$,  and \eqref{eq:governing} is posed on a bounded domain $\Omega \subset \mathbb{R}^2$ for $t >0$, 
+where  $\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}$, $\phi \coloneqq \phi_1 + \cdots + \phi_N$,  and is posed on a bounded domain $\Omega \subset \mathbb{R}^2$ for $t >0$, 
 along with the initial and boundary conditions 
 $$
-\begin{aligned}  \label{initconds} 
+\begin{aligned}  
 	& \Phi ( \boldsymbol{x}, 0 ) = \Phi_0 (\boldsymbol{x}) \quad \text{for all $\boldsymbol{x} \in \Omega$, 
 		where $\Phi_0 \coloneqq ( \phi_{1,0}, \dots, \phi_{N,0})^{\mathrm{T}}$},  \\
 	& \boldsymbol{u} = \boldsymbol{0} \quad \text{and} \quad   (f_{ l}(\Phi)\boldsymbol{k}) \cdot \boldsymbol{n} = 0,\quad  l=1,\dots,N, 
