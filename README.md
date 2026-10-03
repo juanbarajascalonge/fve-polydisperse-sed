@@ -14,6 +14,18 @@ $$
 	\end{aligned}
  $$ 
 
+where  $\Phi \coloneqq ( \phi_1, \dots, \phi_N)^{\mathrm{T}}$, $\phi \coloneqq \phi_1 + \cdots + \phi_N$,  and \eqref{eq:governing} is posed on a bounded domain $\Omega \subset \mathbb{R}^2$ for $t >0$, 
+along with the initial and boundary conditions 
+$$
+\begin{aligned}  \label{initconds} 
+	& \Phi ( \boldsymbol{x}, 0 ) = \Phi_0 (\boldsymbol{x}) \quad \text{for all $\boldsymbol{x} \in \Omega$, 
+		where $\Phi_0 \coloneqq ( \phi_{1,0}, \dots, \phi_{N,0})^{\mathrm{T}}$},  \\
+	& \boldsymbol{u} = \boldsymbol{0} \quad \text{and} \quad   (f_{ l}(\Phi)\boldsymbol{k}) \cdot \boldsymbol{n} = 0,\quad  l=1,\dots,N, 
+	\quad\text{on  $\partial \Omega$,}   \label{boundconds} \\
+	& \int_{\Omega} p(\boldsymbol{x},t)\,\mathrm{d} \boldsymbol{x} = 0  \quad  \text{for all $t\geq 0$.}  \label{pcond}
+\end{aligned} 
+$$
+
 > J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
 > *An invariant-region-preserving finite-volume-element scheme for a
 > polydisperse model of flow and segregation in general domains* (2026).
