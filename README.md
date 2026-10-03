@@ -75,9 +75,8 @@ A snapshot can be plotted with
 `help plot_result`).
 
 Mesh files: `square<n>.mat` (Example 1, n = 4, ..., 128),
-`inclined_<theta>_<k>.mat` (Example 2), `cone_<k>.mat` (Example 3),
-`refluxclas_<k>.mat` (Example 4) and `tank_160x30.mat` (Example 5, generated
-by the script if missing). A mesh file needs at least the triangulation
+`inclined_<theta>_<k>.mat` (Example 2), `roof_<k>.mat` (Example 3),
+`refluxclas_<k>.mat` (Example 4) and `tank_160x30.mat` (Example 5). A mesh file needs at least the triangulation
 `Vtri` (2 x nv) and `Ttri` (3 x nt); see `load_mesh.m`.
 
 ## Requirements
