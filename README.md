@@ -1,6 +1,18 @@
 # IRP finite-volume-element scheme for polydisperse flow and segregation
 
-MATLAB code for the numerical examples of
+This Github repository contains the source files of a finite volume element solver written in MATLAB designed to approximate the coupled  transport-flow models for polydisperse flow and segregation given by
+
+$$
+	\begin{aligned}
+		\label{eq1.1a} 	\partial_t  \phi_{ l} +\nabla \cdot \big(\phi_{ l} \boldsymbol{u}+  f_{ l}(\Phi)\boldsymbol{k}\big)&=0,\quad  
+		f_l ( \Phi) = \phi_l v_l ( \Phi), \quad l=1,\dots,N; \\
+		\label{eq1.1b} 	   -\nabla \cdot \bigl(\mu(\phi)\boldsymbol{\varepsilon}(\boldsymbol{u}) \bigr)+ \nabla p &= \boldsymbol{g}(\phi),
+		\quad \boldsymbol{\varepsilon} ( \boldsymbol{u} ) \coloneqq \frac12 ( \nabla \boldsymbol{u} 
+		+ (\nabla \boldsymbol{u})^{\mathrm{T}}); 
+		\\
+		\label{eq1.1c} 	 \quad \nabla \cdot \boldsymbol{u} &= 0, 
+	\end{aligned}
+ $$ 
 
 > J. Barajas-Calonge, R. Bürger, P. Mulet, L. M. Villada,
 > *An invariant-region-preserving finite-volume-element scheme for a
